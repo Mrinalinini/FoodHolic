@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bio form.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="layout">
+        <h1>Biodata Form</h1>
+        <form action="indexform.php" method="post">
+            <h2>Name </h2>
+            <input type="text" name="name" placeholder="Name">
+            <div class="container">
+
+                <h2>Gender :: </h2>
+
+                <ul>
+                    <li>
+                        <input type="radio" id="f-option" name="selector">
+                        <label for="f-option">Male</label>
+
+                        <div class="check"></div>
+                    </li>
+
+                    <li>
+                        <input type="radio" id="s-option" name="selector">
+                        <label for="s-option">Female</label>
+
+                        <div class="check">
+                            <div class="inside"></div>
+                        </div>
+                    </li>
+
+            </div>
+
+            <h2>Place</h2>
+            <input type="text" name="Placename" placeholder="Place">
+
+
+            <h2>Email Address</h2>
+            <input type="email" name="email" placeholder="example@mail.com">
+
+            <h2>Phone Number</h2>
+            <input type="numerical" name="PhoneNO" placeholder="number">
+
+            <h2>Members in your family</h2>
+            <input type="numerical" name="numbers" placeholder="Members">
+            <br> <br>
+
+            <h2>Which subscription would you prefer you prefer</h2>
+            <select name="selectoptions">             
+	        <option >weekly</option>
+	        <option >monthly</option>
+	        <option >daily</option>
+	        <option >3 days a week for 1 month</option>
+	        <option >10 days for 1 month</option>
+        </select>
+
+            <input type="submit" name="submit" class="btn btn-primary" />
+
+            <!--        <textarea name="messages" placeholder="Write to me"></textarea>-->
+    </div>
+
+
+    </form>
+</body>
+
+</html>
